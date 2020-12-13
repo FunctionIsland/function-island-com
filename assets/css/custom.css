@@ -3,20 +3,28 @@ html {
     overflow-x: hidden;
 }
 
+.text-func {
+    color: #f6973d;
+}
+
 .animatedZoom {
-  transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
 .animatedZoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .animatedMenuItem {
-  transition: transform .2s; /* Animation */
+    transition: transform .2s;
+    /* Animation */
 }
 
 .animatedMenuItem:hover {
-  transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
+    /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .pulseEffected {
