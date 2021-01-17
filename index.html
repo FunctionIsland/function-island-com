@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
-
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-navbutton-color" content="#000000">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-
-    <link rel="icon" href="/static/halfmoon/img/halfmoon-fav-alt.png">
-    <title>Function Island | Dapps and Games on TRON</title>
-
-    <!-- Framework (Halfmoon, animate, etc) -->
-    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/animate-css/animate.css" />
-    <link rel="stylesheet" href="assets/css/animate-css/customisations.css" />
-    <link rel="stylesheet" href="assets/css/animate-css/animate.min.css" />
-
-    <!-- Alertify CSS -->
-    <link rel="stylesheet" href="assets/css/alertify.min.css">
-    <link rel="stylesheet" href="assets/css/themes/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/css/custom.css" />
-
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no' />
+    
+        <meta name="theme-color" content="#000000">
+        <meta name="msapplication-navbutton-color" content="#000000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    
+        <link rel="icon" href="/assets/img/function-logos/superLogo.png">
+        <title>Function Island | Dapps and Games on TRON</title>
+    
+        <!-- Framework (Halfmoon, animate, etc) -->
+        <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/halfmoon-theme.css" />
+        <link rel="stylesheet" href="assets/css/animate-css/animate.css" />
+        <link rel="stylesheet" href="assets/css/animate-css/customisations.css" />
+        <link rel="stylesheet" href="assets/css/animate-css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />
+    
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
+    </head>
 
 <body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
     <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="default">
@@ -50,7 +45,7 @@
                 </button>
 
                 <a class="btn btn-primary mr-5" href="#receiveTRXModal">
-                    <span id="myTronBalance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX <small>(<span id="myTronAddress"></span>)</small>
+                    My Wallet
                 </a>
             </div>
         </nav>
@@ -65,18 +60,13 @@
                 <a href="divs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign" style="color: #00ff62;" aria-hidden="true"></i></span> My D1VS</a>
                 <a href="faqs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question" style="color: #ce0000;" aria-hidden="true"></i></span> Help &amp; FAQs</a>
                 <br />
-                <h5 class="sidebar-title">Resources</h5>
-                <div class="sidebar-divider"></div>
-                <a href="#rainmakerModal" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fa fa-globe" aria-hidden="true"></i></span> Pricefloor</a>
-                <a href="#referralsModal" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fa fa-globe" aria-hidden="true"></i></span> Referrals</a>
-                <a href="#statisticModal" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fa fa-globe" aria-hidden="true"></i></span> Statistics</a>
                 <div class="sidebar-divider"></div>
                 <br />
                 <div class="row">
-                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord"></i></a></div>
-                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter text-func"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram text-func"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord text-func"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-func"></i></a></div>
                 </div>
             </div>
         </div>
@@ -89,10 +79,43 @@
                             <div class="row">
                                 <div class="col text-center">
                                     <img src="assets/img/function-logos/superLogo.png" width="350px" height="400px" />
-                                    <h1><a href="#usernameModal" style="color: #f6973d;">Welcome, <span class="username">Player</span></a></h1>
-                                    <div class="alert alert-warning">
-                                        <b>You need to use a Dapp browser or TronLink to get the best of Function Island!</b><br>
-                                        <a class="btn btn-block btn-md btn-success" href="#onboardModal">Learn More</a>
+                                    <div class="alert alert-primary">
+                                        <strong>To get the best of your visit, you should use a Tron-enabled Browser - <a href="#onboardModal">Learn More</a></strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="card">
+                                        <h3 class="card-title">Get some D1VS!</h3>
+                                        <div class="card-body">
+                                            <img src="/assets/img/function-logos/beluga.png" width="100" height="100" />
+                                            <p>Hodl D1VS and earn TRX as others buy and sell!</p>
+                                            <a class="btn btn-block btn-md btn-orange" href="divs.html">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card">
+                                        <h3 class="card-title">Coming Soon...</h3>
+                                        <div class="card-body">
+                                            <img src="/assets/img/function-logos/logo.png" width="100" height="100" />
+                                            <p>Some new Function Island Dapps and games!</p>
+                                            <a class="btn btn-block btn-md bg-func" href="#">...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <div class="card">
+                                        <h3 class="card-title">Join us Today!</h3>
+                                        <div class="card-body">
+                                            <img src="/assets/img/function-logos/island.png" width="100" height="100" />
+                                            <p>Join the growing community on Telegram!</p>
+                                            <a class="btn btn-block btn-md bg-func" href="https://t.me/FunctionIsland">Telegram</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -110,11 +133,12 @@
                                     <!-- Nested content container inside card -->
                                     <div class="content text-center">
                                         <b class="text-center" id="currentTitle">Ad Space</b><br />
-                                        <small class="text-danger">Coming Soon</small>
+                                        <small class="text-primary">Coming Soon</small>
                                         <p class=" text-center text-muted" id="currentText">Privacy-friendly desktop-view adspace</p>
-                                        <div class="text-center"><a href="https://t.me/FunctionIsland" target="_blank" class="btn btn-success">Enquire Now</a></div>
+                                        <div class="text-center"><a href="https://t.me/FunctionIsland" target="_blank" class="btn btn-primary">Enquire Now</a></div>
                                     </div>
                                 </div>
+                                <br />
                             </div>
                         </div>
                     </div>
@@ -159,224 +183,6 @@
         </div>
     </div>
 
-    <div class="modal" id="rainmakerModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                <h5 class="modal-title">D1VS Pricefloor </h5>
-                <div class="row">
-                    <div class="col text-center">
-                        <p>
-                            <b>Pricefloor Earnings: </b> <span class="text-danger"><span id="rainmakerDividends">0</span> TRX</span><br />
-                            <b>Supply Percentage: </b> <span class="text-success"><span id="supplyFloorPercentage">0</span>&#37;</span>
-                        </p>
-                    </div>
-                </div>
-
-                <hr />
-                <br />
-                <div class="row">
-                    <div class="col text-center">
-                        <b>
-                            <img src="assets/img/function-logos/logo.png" width="45px" height="45px" /><br />
-                            <span id="rainmakerTokens">0</span> D1VS
-                        </b>
-                    </div>
-
-                    <div class="col text-center">
-                        <b>
-                            <img src="assets/img/tron.png" width="45px" height="45px" /><br />
-                            <span id="floorTRX">0</span> TRX
-                        </b>
-                    </div>
-
-                    <div class="col text-center">
-                        <b>
-                            <img src="assets/img/function-logos/dollar.png" width="45px" height="45px" /><br />
-                            &#36;<span id="floor-value-usd">0</span>
-                        </b>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col text-center">
-                        <h3></h3>
-                        <small>Held by PriceFloor</small>
-                    </div>
-                </div>
-
-                <hr />
-
-                <div class="row">
-                    <div class="col text-center">
-                        <br />
-                        <small>
-                            The button below tells the PriceFloor contract to buy as much D1VS as it can with the Dividends it has earned. This has the effect of raising the minimum price which D1VS will ever be sold at - and since the Price Floor contract can never sell, transfer or destroy its D1VS, this minimum value will only grow larger over time as the D1VS platform is used.
-                        </small>
-                        <br />
-                        <br />
-                        <button id="makeItRainTx" class="btn btn-block btn-md btn-success" href="#">Raise Price Floor</button>
-                    </div>
-                </div>
-                <br />
-
-                <div class="text-right mt-20">
-                    <a href="#" class="btn mr-5" role="button">Close</a>
-                    <a href="https://tronscan.org/#/contract/TRrLSZknfHCS8ejYoffGsH5EeRQ4WwT2Mt/code" target="_blank" class="btn btn-primary">View Contract</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="usernameModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                <h5 class="modal-title">Edit Username </h5>
-                <div class="row">
-                    <div class="col text-left">
-                        <label>Enter a name: </label>
-                        <input type="text" name="newUsername" id="newUsername" onchange="checkAvailability()" class="form-control" placeholder="Enter your desired Username" />
-                        <small>Max. 12 Letters/numbers, no spaces!</small>
-                        <hr />
-                        <p class="text-center">Username Available: <span id="availableStatus"></span></p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col text-center">
-                        <button onclick="checkAvailability()" class="btn btn-block btn-md btn-warning">Check Availability</button>
-                    </div>
-
-                    <div id="registerButtonArea" class="col text-center" style="display: none;">
-                        <button onclick="registerName()" class="btn btn-block btn-md btn-success">Register (25 TRX)</button>
-                    </div>
-                </div>
-                <br />
-
-                <div class="text-right mt-20">
-                    <a href="#" class="btn mr-5" role="button">Close</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="termsModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                <h5 class="modal-title">Terms of Use </h5>
-                <div class="row">
-                    <div class="col text-center">
-                        <p>
-                            &quot;Function Island&quot;, is provided on an &quot;As-Is&quot; basis, with zero guarantee of bug-free operation, profit or stability.<br />
-                            The Dapps and games hosted on this site have <b>NOT</b> been audited - You should only use or deposit funds you are willing to lose on Function Island.<br />
-                            <b>NOBODY EXCEPT YOU</b> will be held responsible for any losses you may incur as a result of using Function Island.
-                        </p>
-                    </div>
-                </div>
-                <br />
-
-                <div class="text-right mt-20">
-                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                    <a href="#" class="btn mr-5" role="button">Close</a>
-                    <a href="https://www.t.me/D1VSFeed" target="_blank" class="btn btn-primary" role="button">Join the Channel</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="referralsModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                <h5 class="modal-title">Referral Link</h5>
-                <div class="row">
-                    <div class="col text-center">
-                        <input id="ref-url" class="form-control text-center text-secondary" value="" readonly="" /><br />
-                        <small>When others use your link to buy D1VS, you get a 3&#37; commission!</small>
-                    </div>
-                </div>
-                <br />
-
-                <div class="text-right mt-20">
-                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                    <a href="#" class="btn mr-5" role="button">Close</a>
-                    <button type="button" id="copyButton" data-clipboard-target="#ref-url" onclick="return false;" class="btn btn-success">Copy Link</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="statisticModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                <h5 class="modal-title">Platform Statistics </h5>
-                <div class="row">
-                    <div class="col text-center">
-                        <br />
-
-                        <table class="table">
-                            <tr>
-                                <td><b>Contract Holdings</b></td>
-                                <td class="text-danger"><span id="contract-trx-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> TRX</td>
-                            </tr>
-                            <tr>
-                                <td><b>USD Value</b></td>
-                                <td class="text-success">&#36;<span style="display: inline" id="supply-value-usd"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> USD</td>
-                            </tr>
-                            <tr>
-                                <td><b>Total Supply</b></td>
-                                <td><span id="contract-token-balance"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> D1VS</td>
-                            </tr>
-                            <tr>
-                                <td><b>Contract Value (BTC)</b></td>
-                                <td class="text-secondary"><span id="supply-value-btc"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> BTC</td>
-                            </tr>
-                            <tr>
-                                <td><b>Contract Value (ETH)</b></td>
-                                <td style="color: #00a7ff;"><span id="supply-value-eth"><img src="assets/img/loading.svg" width="13px" height="13px" /></span> ETH</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="text-right mt-20">
-                    <a href="#" class="btn mr-5" role="button">Close</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="monitorModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                <h5 class="modal-title">D1VS Monitor </h5>
-                <div class="row">
-                    <div class="col text-center"><img src="assets/img/tron.png" width="200px" height="200px" /></div>
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <small>
-                            D1VS Monitor is a specialised Telegram channel, which enables you to follow the action of every Buy, Sell, Reinvest and Withdraw of the game! Price and value of D1VS is reported with every action, too - so you won't miss a thing!<br />
-                            <br />
-                            It is recommended to mute the channel, or you might end up with lots of notifications very quickly!
-                        </small>
-                    </div>
-                </div>
-                <br />
-
-                <div class="text-right mt-20">
-                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
-                    <a href="#" class="btn mr-5" role="button">Close</a>
-                    <a href="https://www.t.me/D1VSFeed" target="_blank" class="btn btn-primary" role="button">Join the Channel</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="modal" id="receiveTRXModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -384,12 +190,8 @@
                 <h5 class="modal-title">Receive TRX</h5>
                 <div class="row">
                     <div class="col text-center">
-                        <img id="qrImage" src="#" alt="Your Crop Address as a QR Code"><br />
-                        <small>Scan this QR Code to tip <span class="username">Player</span>!</small>
-                        <br />
-                        <br />
-                        <b>TRON Address: </b><br />
-                        <small id="myTronAddr"></small>
+                        <img id="qrImage" src="#" alt="Your TRX Address in a QR Code"><br />
+                        <small><span id="myTronAddr"></span></small>
                     </div>
                 </div>
                 <br />
@@ -417,7 +219,6 @@
     <script src="assets/js/tronweb.js"></script>
 
     <script src="assets/dapps/hourglass.js"></script>
-    <script src="assets/dapps/usernames.js"></script>
 
     <script>
         getUsername()

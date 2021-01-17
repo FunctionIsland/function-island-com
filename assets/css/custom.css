@@ -7,6 +7,10 @@ html {
     color: #f6973d;
 }
 
+.bg-func {
+    background-color: #f6973d;
+}
+
 .animatedZoom {
     transition: transform .2s;
     /* Animation */
@@ -46,4 +50,8 @@ html {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
     }
+}
+
+:root {
+    --button-success-bg-color: #f6973d;
 }
