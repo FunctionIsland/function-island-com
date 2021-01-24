@@ -7,6 +7,11 @@ html {
     color: #f6973d;
 }
 
+.text-bright {
+    color: #fff;
+    font-weight: 800;
+}
+
 .bg-func {
     background-color: #f6973d;
 }
@@ -53,5 +58,7 @@ html {
 }
 
 :root {
-    --button-success-bg-color: #f6973d;
+    --button-primary-bg-color: #f6973d;
+
+
 }

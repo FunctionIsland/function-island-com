@@ -5,7 +5,7 @@
     <!-- Meta tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no' />
+    <meta name="viewport" content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no' />
 
     <meta name="theme-color" content="#000000">
     <meta name="msapplication-navbutton-color" content="#000000">
@@ -53,11 +53,16 @@
 
         <div class="sidebar">
             <div class="sidebar-menu">
-                <h5 class="sidebar-title">Function Island</h5>
+                <h5 class="sidebar-title">Main Menu</h5>
                 <div class="sidebar-divider"></div>
-                <a href="index.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-home" aria-hidden="true"></i></span> Home</a>
-                <a href="divs.html" class="sidebar-link sidebar-link-with-icon active animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign" style="color: #00ff62;" aria-hidden="true"></i></span> My D1VS</a>
-                <a href="faqs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question" style="color: #ce0000;" aria-hidden="true"></i></span> Help &amp; FAQs</a>
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-home text-func" aria-hidden="true"></i></span> Home</a>
+                <a href="divs.html" class="sidebar-link sidebar-link-with-icon active animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign text-func" aria-hidden="true"></i></span> <span class="text-bright">My D1VS</span></a>
+                
+                <a href="adspace.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-bullhorn text-func" aria-hidden="true"></i></span> Adspace</a>
+                
+                <a href="faqs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question text-func" aria-hidden="true"></i></span> Help &amp; FAQs</a>
+                
+                <a href="about.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-info text-func" aria-hidden="true"></i></span> About</a>
                 <br />
                 <div class="sidebar-divider"></div>
                 <br />
@@ -149,8 +154,11 @@
                                 <div class="col text-center"></div>
                                 <div class="col text-center"><a href="#rainmakerModal" class="btn btn-block btn-dark">Pricefloor</a></div>
                                 <div class="col text-center"></div>
+                                <div class="col text-center"><a href="#floodmakerModal" class="btn btn-block btn-dark">Floodmaker</a></div>
+                                <div class="col text-center"></div>
                                 <div class="col text-center"><a href="#statisticModal" class="btn btn-block btn-dark">Statistics</a></div>
                                 <div class="col text-center"></div>
+                                
                             </div>
                         </section>
                     </div>
@@ -162,15 +170,20 @@
                                 <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                                 <div class="card p-0">
                                     <!-- p-0 = padding: 0 -->
-                                    <img src="assets/img/function-logos/superLogo.png" class="img-fluid rounded-top" alt="Advertiser Image" id="currentImg"> <!-- rounded-top = rounded corners on the top -->
+                                    <div class="row">
+                                        <br />
+                                        <span id="adIcon"><div class="col text-center"><img src="assets/img/loading.svg" width="13px" height="13px" /></div></span>
+                                    </div>
+                                    
                                     <!-- Nested content container inside card -->
                                     <div class="content text-center">
-                                        <b class="text-center" id="currentTitle">Ad Space</b><br />
-                                        <small class="text-primary">Coming Soon</small>
-                                        <p class=" text-center text-muted" id="currentText">Privacy-friendly desktop-view adspace</p>
-                                        <div class="text-center"><a href="https://t.me/FunctionIsland" target="_blank" class="btn btn-primary">Enquire Now</a></div>
+                                        <b class="text-center" id="adTitle"><img src="assets/img/loading.svg" width="13px" height="13px" /></b><br />
+                                        <span id="adBody"><img src="assets/img/loading.svg" width="13px" height="13px" /></span><br />
+                                        <br />
+                                        <div class="text-center"><span id="adLink"><img src="assets/img/loading.svg" width="13px" height="13px" /></span></div>
                                     </div>
                                 </div>
+                                <br />
                             </div>
                         </div>
                     </div>
@@ -184,7 +197,6 @@
 
             <span class="navbar-text animatedZoom"><a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /> </a></span>
             <span class="navbar-text animatedZoom"><a href="https://www.trustpilot.com/review/functionisland.xyz" target="_blank"><img src="assets/img/monitor-logos/trustpilot.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /> </a></span>
-            <span class="navbar-text animatedZoom"><a href="https://dapp.review/dapp/Function-Island-D1VS" target="_blank"><img src="assets/img/monitor-logos/dappreview.jpg" width="30px" height="30px" /></a></span>
             <span class="navbar-text animatedZoom"><a href="https://www.dappstats.com/dapp/function-island-d1vs" target="_blank"><img src="assets/img/monitor-logos/dappstats.png" width="30px" height="25px" /></a></span>
             <span class="navbar-text animatedZoom"><a href="https://dapponline.io/dapp-detail/3771" target="_blank"><img src="assets/img/monitor-logos/dapponline.png" width="30px" height="30px" /></a></span>
 
@@ -410,7 +422,76 @@
             </div>
         </div>
     </div>
+    
+    <div class="modal" id="floodmakerModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">D1VS FloodMaker </h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>
+                            <b>FloodMaker Earnings: </b> <span class="text-danger"><span id="floodmakerDividends">0</span> TRX</span><br />
+                            <b>Supply Percentage: </b> <span class="text-success"><span id="floodFloorPercentage">0</span>&#37;</span>
+                        </p>
+                    </div>
+                </div>
 
+                <hr />
+                <br />
+                <div class="row">
+                    <div class="col text-center">
+                        <b>
+                            <img src="assets/img/function-logos/logo.png" width="45px" height="45px" /><br />
+                            <span id="floodmakerTokens">0</span> D1VS
+                        </b>
+                    </div>
+
+                    <div class="col text-center">
+                        <b>
+                            <img src="assets/img/tron.png" width="45px" height="45px" /><br />
+                            <span id="floodTRX">0</span> TRX
+                        </b>
+                    </div>
+
+                    <div class="col text-center">
+                        <b>
+                            <img src="assets/img/function-logos/dollar.png" width="45px" height="45px" /><br />
+                            &#36;<span id="flood-value-usd">0</span>
+                        </b>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <h3></h3>
+                        <small>Held by FloodMaker</small>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col text-center">
+                        <br />
+                        <small>
+                            The button below tells the FloodMaker contract to buy as much D1VS as it can with the Dividends it has earned. This has the effect of raising the minimum price which D1VS will ever be sold at - and since the FloodMaker contract can never sell, transfer or destroy its D1VS, this minimum value will only grow larger over time as the D1VS platform is used.
+                        </small>
+                        <br />
+                        <br />
+                        <button id="makeItFloodTx" class="btn btn-block btn-md btn-success" href="#">Activate FloodMaker</button>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://tronscan.org/#/contract/TLfJEz4sKZHnUw1yMHf3pY8wXLLZnJc3pr/code" target="_blank" class="btn btn-primary">View Contract</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="modal" id="termsModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -562,18 +643,6 @@
     </script>
 
     <script type="text/javascript">
-        var clipboard = new ClipboardJS('#copyButton');
-
-        clipboard.on('success', function(e) {
-            console.log(e);
-            alertify.success('Copied Link');
-        });
-
-        clipboard.on('error', function(e) {
-            console.log(e);
-            alertify.error('Did not Copy Link');
-        });
-
         function getCookie(name) {
             var dc = document.cookie;
             var prefix = name + "=";

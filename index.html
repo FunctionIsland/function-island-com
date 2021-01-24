@@ -5,7 +5,7 @@
         <!-- Meta tags -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no' />
+        <meta name="viewport" content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no' />
     
         <meta name="theme-color" content="#000000">
         <meta name="msapplication-navbutton-color" content="#000000">
@@ -16,7 +16,6 @@
     
         <!-- Framework (Halfmoon, animate, etc) -->
         <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/css/halfmoon-theme.css" />
         <link rel="stylesheet" href="assets/css/animate-css/animate.css" />
         <link rel="stylesheet" href="assets/css/animate-css/customisations.css" />
         <link rel="stylesheet" href="assets/css/animate-css/animate.min.css" />
@@ -54,11 +53,16 @@
 
         <div class="sidebar">
             <div class="sidebar-menu">
-                <h5 class="sidebar-title">Function Island</h5>
+                <h5 class="sidebar-title">Main Menu</h5>
                 <div class="sidebar-divider"></div>
-                <a href="index.html" class="sidebar-link sidebar-link-with-icon active animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-home" aria-hidden="true"></i></span> Home</a>
-                <a href="divs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign" style="color: #00ff62;" aria-hidden="true"></i></span> My D1VS</a>
-                <a href="faqs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question" style="color: #ce0000;" aria-hidden="true"></i></span> Help &amp; FAQs</a>
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon active animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-home text-func" aria-hidden="true"></i></span> <span class="text-bright">Home</span></a>
+                <a href="divs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign text-func" aria-hidden="true"></i></span> My D1VS</a>
+                
+                <a href="adspace.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-bullhorn text-func" aria-hidden="true"></i></span> Adspace</a>
+                
+                <a href="faqs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question text-func" aria-hidden="true"></i></span> Help &amp; FAQs</a>
+                
+                <a href="about.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-info text-func" aria-hidden="true"></i></span> About</a>
                 <br />
                 <div class="sidebar-divider"></div>
                 <br />
@@ -86,35 +90,35 @@
                             </div>
 
                             <div class="row">
-                                <div class="col text-center">
+                                <div class="col-md-4 text-center">
                                     <div class="card">
                                         <h3 class="card-title">Get some D1VS!</h3>
                                         <div class="card-body">
                                             <img src="/assets/img/function-logos/beluga.png" width="100" height="100" />
-                                            <p>Hodl D1VS and earn TRX as others buy and sell!</p>
+                                            <p>Hold some D1VS and earn TRX as the contract is deposited to &amp; withdrawn from!</p>
                                             <a class="btn btn-block btn-md btn-orange" href="divs.html">Play Now</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col text-center">
+                                <div class="col-md-4 text-center">
                                     <div class="card">
-                                        <h3 class="card-title">Coming Soon...</h3>
+                                        <h3 class="card-title">Share your Message!</h3>
                                         <div class="card-body">
-                                            <img src="/assets/img/function-logos/logo.png" width="100" height="100" />
-                                            <p>Some new Function Island Dapps and games!</p>
-                                            <a class="btn btn-block btn-md bg-func" href="#">...</a>
+                                            <img src="/assets/img/function-logos/broadcast.png" width="100" height="100" />
+                                            <p>Use Function Adspace, and reach our entire website audiences!</p>
+                                            <a class="btn btn-block btn-md bg-func" href="adspace.html">Share Now</a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col text-center">
+                                <div class="col-md-4 text-center">
                                     <div class="card">
-                                        <h3 class="card-title">Join us Today!</h3>
+                                        <h3 class="card-title">Join the Community!</h3>
                                         <div class="card-body">
                                             <img src="/assets/img/function-logos/island.png" width="100" height="100" />
-                                            <p>Join the growing community on Telegram!</p>
-                                            <a class="btn btn-block btn-md bg-func" href="https://t.me/FunctionIsland">Telegram</a>
+                                            <p>We have a group chat on Telegram for our growing community - Join us!</p>
+                                            <a class="btn btn-block btn-md bg-func" href="https://t.me/FunctionIsland">Join Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -129,13 +133,17 @@
                                 <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
                                 <div class="card p-0">
                                     <!-- p-0 = padding: 0 -->
-                                    <img src="assets/img/function-logos/superLogo.png" class="img-fluid rounded-top" alt="Advertiser Image" id="currentImg"> <!-- rounded-top = rounded corners on the top -->
+                                    <div class="row">
+                                        <br />
+                                        <span id="adIcon"><div class="col text-center"><img src="assets/img/loading.svg" width="13px" height="13px" /></div></span>
+                                    </div>
+                                    
                                     <!-- Nested content container inside card -->
                                     <div class="content text-center">
-                                        <b class="text-center" id="currentTitle">Ad Space</b><br />
-                                        <small class="text-primary">Coming Soon</small>
-                                        <p class=" text-center text-muted" id="currentText">Privacy-friendly desktop-view adspace</p>
-                                        <div class="text-center"><a href="https://t.me/FunctionIsland" target="_blank" class="btn btn-primary">Enquire Now</a></div>
+                                        <b class="text-center" id="adTitle"><img src="assets/img/loading.svg" width="13px" height="13px" /></b><br />
+                                        <span id="adBody"><img src="assets/img/loading.svg" width="13px" height="13px" /></span><br />
+                                        <br />
+                                        <div class="text-center"><span id="adLink"><img src="assets/img/loading.svg" width="13px" height="13px" /></span></div>
                                     </div>
                                 </div>
                                 <br />
@@ -152,7 +160,6 @@
 
             <span class="navbar-text animatedZoom"><a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /> </a></span>
             <span class="navbar-text animatedZoom"><a href="https://www.trustpilot.com/review/functionisland.xyz" target="_blank"><img src="assets/img/monitor-logos/trustpilot.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /> </a></span>
-            <span class="navbar-text animatedZoom"><a href="https://dapp.review/dapp/Function-Island-D1VS" target="_blank"><img src="assets/img/monitor-logos/dappreview.jpg" width="30px" height="30px" /></a></span>
             <span class="navbar-text animatedZoom"><a href="https://www.dappstats.com/dapp/function-island-d1vs" target="_blank"><img src="assets/img/monitor-logos/dappstats.png" width="30px" height="25px" /></a></span>
             <span class="navbar-text animatedZoom"><a href="https://dapponline.io/dapp-detail/3771" target="_blank"><img src="assets/img/monitor-logos/dapponline.png" width="30px" height="30px" /></a></span>
 
@@ -218,12 +225,7 @@
     <script src="assets/js/common.min.js"></script>
     <script src="assets/js/tronweb.js"></script>
 
-    <script src="assets/dapps/hourglass.js"></script>
-
-    <script>
-        getUsername()
-
-    </script>
+    <script src="assets/dapps/adspace.js"></script>
 
     <script type="text/javascript">
         function toastAlert(_alertTitle, _alertContent) {
@@ -240,60 +242,6 @@
         }
         if (window !== window.parent) {
             halfmoon.toggleDarkMode = parentToggleDarkmode;
-        }
-
-    </script>
-
-    <script type="text/javascript">
-        var clipboard = new ClipboardJS('#copyButton');
-
-        clipboard.on('success', function(e) {
-            console.log(e);
-            alertify.success('Copied Link');
-        });
-
-        clipboard.on('error', function(e) {
-            console.log(e);
-            alertify.error('Did not Copy Link');
-        });
-
-        function getCookie(name) {
-            var dc = document.cookie;
-            var prefix = name + "=";
-            var begin = dc.indexOf("; " + prefix);
-
-            if (begin == -1) {
-                begin = dc.indexOf(prefix);
-                if (begin != 0) return null;
-            } else {
-                begin += 2;
-                var end = document.cookie.indexOf(";", begin);
-                if (end == -1) {
-                    end = dc.length;
-                }
-            }
-
-            return decodeURI(dc.substring(begin + prefix.length, end));
-        }
-
-        var url_string = window.location.href;
-        var url = new URL(url_string);
-        var theCookie = "masternode=" + url.searchParams.get("masternode");
-
-        if (url.searchParams.get("masternode") !== null) {
-            var toSet = "masternode=" + url.searchParams.get("masternode");
-            console.log(url.searchParams.get("masternode"));
-            document.cookie = theCookie;
-        } else {
-
-            var refCookie = getCookie("masternode");
-            console.log(refCookie);
-            if (refCookie === null) {
-                console.log("Ref cookie was null. Setting to default.");
-                document.cookie = "masternode=TRrLSZknfHCS8ejYoffGsH5EeRQ4WwT2Mt";
-            } else {
-                // do nothing if the cookie is already set and there is no new mnode link
-            }
         }
 
     </script>

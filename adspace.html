@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no' />
+    
+        <meta name="theme-color" content="#000000">
+        <meta name="msapplication-navbutton-color" content="#000000">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    
+        <link rel="icon" href="/assets/img/function-logos/superLogo.png">
+        <title>Function Island | Dapps and Games on TRON</title>
+    
+        <!-- Framework (Halfmoon, animate, etc) -->
+        <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />s
+        <link rel="stylesheet" href="assets/css/animate-css/animate.css" />
+        <link rel="stylesheet" href="assets/css/animate-css/customisations.css" />
+        <link rel="stylesheet" href="assets/css/animate-css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />
+    
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
+    </head>
+
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+    <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="default">
+        <div class="sticky-alerts"></div>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="#" class="navbar-brand ml-10 ml-sm-20">
+                <span class="d-none d-sm-flex">Function Island</span>
+            </a>
+            <div class="navbar-nav ml-auto">
+                <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <span class="sr-only">Toggle dark mode</span>
+                </button>
+
+                <a class="btn btn-primary mr-5" href="#receiveTRXModal">
+                    My Wallet
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h5 class="sidebar-title">Main Menu</h5>
+                <div class="sidebar-divider"></div>
+                <a href="index.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-home text-func" aria-hidden="true"></i></span> Home</a>
+                <a href="divs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-dollar-sign text-func" aria-hidden="true"></i></span> My D1VS</a>
+                
+                <a href="adspace.html" class="sidebar-link sidebar-link-with-icon active animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-bullhorn text-func" aria-hidden="true"></i></span> <span class="text-bright">Adspace</span></a>
+                
+                <a href="faqs.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-question text-func" aria-hidden="true"></i></span> Help &amp; FAQs</a>
+
+                <a href="about.html" class="sidebar-link sidebar-link-with-icon animatedMenuItem"><span class="sidebar-icon"><i class="fas fa-info text-func" aria-hidden="true"></i></span> About</a>
+                <br />
+                <div class="sidebar-divider"></div>
+                <br />
+                <div class="row">
+                    <div class="col text-center animatedZoom"><a href="https://twitter.com/FunctionIsland" target="_blank"><i class="fab fa-twitter text-func"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://t.me/FunctionIsland" target="_blank"><i class="fab fa-telegram text-func"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://discord.gg/FmCEbPU" target="_blank"><i class="fab fa-discord text-func"></i></a></div>
+                    <div class="col text-center animatedZoom"><a href="https://github.com/FunctionIsland" target="_blank"><i class="fab fa-github text-func"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row row-eq-spacing-lg">
+                    <div class="col-lg-9">
+                        <section id="faqsSection" class="animate__animated animate__fadeIn">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <h3>Function AdSpace</h3>
+                                        <small>Privacy-Friendly On-Chain Advertising - <a href="faqs.html"><span class="text-func">Learn More</span></a></small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-5 text-left">
+                                                            <label for="newAdTitle">Ad Title</label><br />
+                                                            <input type="text" id="newAdTitle" class="form-control" placeholder="Ad Title" maxlength="32" />
+                                                            <small><strong>Between 1-32 Characters</strong></small>
+                                                            <hr />
+                                                            <br />
+
+                                                            <label for="newAdIcon">Ad Icon</label><br />
+                                                            <input type="url" id="newAdIcon" class="form-control" placeholder="Ad Icon" maxlength="128" maxlength="128" />
+                                                            <small><strong>Direct image links only</strong></small>
+                                                            <hr />
+                                                            <br />
+                                                        </div>
+
+                                                        <div class="col text-center"></div>
+
+                                                        <div class="col-md-5 text-left">
+                                                            <label for="newAdBody">Ad Body</label><br />
+                                                            <input type="text" id="newAdBody" class="form-control" placeholder="Ad Body" maxlength="128" />
+                                                            <small><strong>The main text of your Ad</strong></small>
+                                                            <hr />
+                                                            <br />
+                                                            
+                                                            <label for="newAdLink">Ad Link</label><br />
+                                                            <input type="url" id="newAdLink" class="form-control" placeholder="Ad Link" maxlength="128" />
+                                                            <small><strong>A link to your website</strong></small>
+                                                            <hr />
+                                                            <br />
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col text-center">
+                                                            <label for="newAdDays">Days to Hire</label><br />
+                                                            <input type="number" id="newAdDays" class="form-control" placeholder="Days to Hire" value="1" min="1" max="20" />
+                                                            <small><strong>Max. 20 days at a time, to give everyone a chance to buy the space</strong></small>
+                                                            <br />
+                                                            <br />
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col text-center">
+                                                            <button type="submit" id="buyAdspaceButton" class="btn btn-block btn-success"><span id="buyButtonText">Rent Adspace</span></button>
+                                                        </div>
+                                                        
+                                                        <div class="col text-center">
+                                                            <a class="btn btn-block btn-dark" href="#howThisWorksModal">How this works</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section id="homeSection" class="animate__animated animate__fadeIn">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h4><span id="oneDayPrice">0</span></h4>
+                                    <small>One-Day Price</small>
+                                </div>
+                                
+                                <div class="col text-center">
+                                    <h4><span id="allDaysPrice">0</span></h4>
+                                    <small>Total Price</small>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- DESKTOP ONLY SIDEBAR - RIGHT -->
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="content">
+                            <div class="w-400 mw-full">
+                                <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                                <div class="card p-0">
+                                    <!-- p-0 = padding: 0 -->
+                                    <div class="row">
+                                        <br />
+                                        <span id="adIcon"><div class="col text-center"><img src="assets/img/loading.svg" width="13px" height="13px" /></div></span>
+                                    </div>
+                                    
+                                    <!-- Nested content container inside card -->
+                                    <div class="content text-center">
+                                        <b class="text-center" id="adTitle"><img src="assets/img/loading.svg" width="13px" height="13px" /></b><br />
+                                        <span id="adBody"><img src="assets/img/loading.svg" width="13px" height="13px" /></span><br />
+                                        <br />
+                                        <div class="text-center"><span id="adLink"><img src="assets/img/loading.svg" width="13px" height="13px" /></span></div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-fixed-bottom">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+
+            <span class="navbar-text animatedZoom"><a href="https://dappradar.com/tron/high-risk/function-island" target="_blank"><img src="assets/img/monitor-logos/dappradar.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /> </a></span>
+            <span class="navbar-text animatedZoom"><a href="https://www.trustpilot.com/review/functionisland.xyz" target="_blank"><img src="assets/img/monitor-logos/trustpilot.png" width="30px" height="30px" style="background-color: rgba(0,0,0,0.75); border-radius: 5px;" /> </a></span>
+            <span class="navbar-text animatedZoom"><a href="https://www.dappstats.com/dapp/function-island-d1vs" target="_blank"><img src="assets/img/monitor-logos/dappstats.png" width="30px" height="25px" /></a></span>
+            <span class="navbar-text animatedZoom"><a href="https://dapponline.io/dapp-detail/3771" target="_blank"><img src="assets/img/monitor-logos/dapponline.png" width="30px" height="30px" /></a></span>
+
+            <ul class="navbar-nav mr-auto">
+            </ul>
+        </nav>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modal" id="howThisWorksModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">How Adspace Works</h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>
+                            Adspace is a smart contract which enables Function Island to host privacy-friendly, image-title-text-and-link style advertising on the Function Island family of websites and domains.<br />
+                            <br />
+                            These &quot;Adspaces&quot; can be bought by anyone, for a starting rate of 2,000 TRX per day. Fill in the details, pay the fees and it&apos;s yours for the selected term!<br />
+                            <br />
+                            Once the paid term is finished, the Adspace defaults back to our own message, readying the space for hire once again!
+                        </p>
+
+                        <small><strong class="text-danger">WARNING: </strong> Function Island staff reserve the right and power to remove any ad which is deemed inappropriate or harmful to our viewers at our own discretion. Due to the nature of the services rendered, no refunds will be issued for ads removed in any context.</small>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="https://tronscan.org/#/contract/TYTH39B5AAbzfirpzQyydWmP7szRmuL8yp/code" target="_blank" class="btn btn-md btn-primary">View Adspace Contract</a>
+                    </div>
+
+                </div>
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="#" class="btn btn-success" role="button">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="onboardModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Get a Wallet</h5>
+                <div class="row">
+                    <div class="col text-center"><img src="assets/img/wallet_cover.png" width="300px" height="150px" /></div>
+                </div>
+                <p>
+                    If you are visiting Function Island on a computer, you will need to install the TronLink extension for Chrome or Firefox. To get the best out of Function Island on your mobile device, you will need to download an app like Klever Wallet.<br />
+                    Please be sure to back up your keys and/or seeds - Nobody can help you recover your crypto, except you!
+                </p>
+                <div class="text-right mt-20">
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="https://klever.io" target="_blank" class="btn btn-primary" role="button">Klever.io</a>
+                    <a href="https://tronlink.org" target="_blank" class="btn btn-secondary" role="button">Tronlink.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="receiveTRXModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                <h5 class="modal-title">Receive TRX</h5>
+                <div class="row">
+                    <div class="col text-center">
+                        <img id="qrImage" src="#" alt="Your TRX Address in a QR Code"><br />
+                        <small><span id="myTronAddr"></span></small>
+                    </div>
+                </div>
+                <br />
+
+                <div class="text-right mt-20">
+                    <!-- text-right = text-align: right, mt-20 = margin-top: 2rem (20px) -->
+                    <a href="#" class="btn mr-5" role="button">Close</a>
+                    <a href="#" class="btn btn-success" role="button">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/halfmoon.js"></script>
+    <script src="assets/js/halfmoon.min.js"></script>
+
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/alertify.min.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/common.min.js"></script>
+    <script src="assets/js/tronweb.js"></script>
+
+    <script src="assets/dapps/adspace.js"></script>
+
+    <script type="text/javascript">
+        function toastAlert(_alertTitle, _alertContent) {
+            var alertContent = _alertContent;
+            var alertTitle = _alertTitle;
+            halfmoon.initStickyAlert({
+                content: alertContent,
+                title: alertTitle
+            })
+        }
+
+        function parentToggleDarkmode() {
+            window.parent.toggleDarkModeFromChild();
+        }
+        if (window !== window.parent) {
+            halfmoon.toggleDarkMode = parentToggleDarkmode;
+        }
+
+    </script>
+</body>
+
+</html>

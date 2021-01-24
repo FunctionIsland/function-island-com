@@ -1,0 +1,91 @@
+{
+	"name": "Function Island Picks",
+	"logoURI": "https://functionisland.com/assets/img/function-logos/superLogo.png",
+	"timestamp": 1610339529000,
+	"tokens": [{
+			"chainId": 1,
+			"address": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+			"name": "Wrapped TRX",
+			"symbol": "WTRX",
+			"decimals": 6,
+			"logoURI": "https://coin.top/production/upload/logo/TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR.png?t=1598430824415"
+		},
+		{
+			"chainId": 1,
+			"address": "TXpw8XeWYeTUd4quDskoUqeQPowRh4jY65",
+			"name": "Wrapped Bitcoin",
+			"symbol": "WBTC",
+			"decimals": 8,
+			"logoURI": "https://coin.top/production/logo/TXpw8XeWYeTUd4quDskoUqeQPowRh4jY65.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+			"name": "Bitcoin",
+			"symbol": "BTC",
+			"decimals": 8,
+			"logoURI": "https://coin.top/production/logo/TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9.png"
+		},
+		{
+			"chainId": 1,
+			"address": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+			"name": "Ethereum",
+			"symbol": "ETH",
+			"decimals": 18,
+			"logoURI": "https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+			"name": "Tether USD",
+			"symbol": "USDT",
+			"decimals": 6,
+			"logoURI": "https://coin.top/production/logo/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+			"name": "USDJ",
+			"symbol": "USDJ",
+			"decimals": 18,
+			"logoURI": "https://coin.top/production/logo/TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+			"name": "JUST",
+			"symbol": "JST",
+			"decimals": 18,
+			"logoURI": "https://coin.top/production/logo/TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9",
+			"name": "SUN",
+			"symbol": "SUN",
+			"decimals": 18,
+			"logoURI": "https://coin.top/production/logo/TKkeiboTkxXKJpbmVFbv4a8ov5rAfRDMf9.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TJvqNiWUN2v2NBG12UhfV7WSvReJkRP3VC",
+			"name": "Bridge Token",
+			"symbol": "BRG",
+			"decimals": 6,
+			"logoURI": "https://coin.top/production/logo/TJvqNiWUN2v2NBG12UhfV7WSvReJkRP3VC.png"
+		},
+		{
+			"chainId": 1,
+			"address": "TVj7RNVHy6thbM7BWdSe9G6gXwKhjhdNZS",
+			"name": "Klever",
+			"symbol": "KLV",
+			"decimals": 6,
+			"logoURI": "https://coin.top/production/logo/TVj7RNVHy6thbM7BWdSe9G6gXwKhjhdNZS.png"
+		}
+	],
+	"version": {
+		"major": 1,
+		"minor": 0,
+		"patch": 0
+	}
+}
